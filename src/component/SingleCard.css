@@ -16,6 +16,13 @@
   background-color: #5954e9;
 }
 
+.card-icon .icon {
+  left: -5rem;
+  top: 1.6rem;
+  position: absolute;
+  color: white;
+}
+
 .country-card-selected {
   border: 1px solid #5954e9;
 }

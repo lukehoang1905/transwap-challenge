@@ -24,7 +24,7 @@ const SingleCard = ({ country, selected, handleSelect }) => {
           disabled={country.isComing}
         >
           <div
-            className="triangle card-icon-holder card-icon "
+            className="triangle card-icon "
             style={{
               display: selected === country.id ? "block" : "none",
               width: "0px",
@@ -33,7 +33,9 @@ const SingleCard = ({ country, selected, handleSelect }) => {
               borderLeft: "90px solid  #5954e9 ",
             }}
           >
-            <CheckSharpIcon />
+            <span className="icon">
+              <CheckSharpIcon />
+            </span>
           </div>
           <Container
             className={`image-container ${country.isComing ? "blur" : " "}`}
