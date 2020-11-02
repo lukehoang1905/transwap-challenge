@@ -1,0 +1,18 @@
+.country-card {
+  border-radius: 8px;
+  width: 275px;
+  margin-bottom: 1rem;
+  border-color: #ced0d6;
+  position: relative;
+}
+
+.card-icon {
+  position: absolute;
+  margin: 0;
+  color: white;
+  background-color: #5954e9;
+}
+
+.country-card-selected {
+  border: 2px solid #5954e9;
+}
