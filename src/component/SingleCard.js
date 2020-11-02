@@ -9,6 +9,7 @@ import {
 } from "@material-ui/core";
 import "./SingleCard.css";
 import CheckSharpIcon from "@material-ui/icons/CheckSharp";
+import ChangeHistoryOutlinedIcon from "@material-ui/icons/ChangeHistoryOutlined";
 
 const SingleCard = ({ country, selected, handleSelect }) => {
   return (
@@ -22,10 +23,18 @@ const SingleCard = ({ country, selected, handleSelect }) => {
           onClick={() => handleSelect(country.id)}
           disabled={country.isComing}
         >
-          <CheckSharpIcon
-            className="card-icon"
-            style={{ display: selected === country.id ? "block" : "none" }}
-          />
+          <div
+            className="triangle card-icon-holder card-icon "
+            style={{
+              display: selected === country.id ? "block" : "none",
+              width: "0px",
+              height: "0px",
+              borderBottom: "90px solid white",
+              borderLeft: "90px solid  #5954e9 ",
+            }}
+          >
+            <CheckSharpIcon />
+          </div>
           <Container
             className={`image-container ${country.isComing ? "blur" : " "}`}
           >
