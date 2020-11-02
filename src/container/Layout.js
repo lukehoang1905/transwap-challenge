@@ -10,9 +10,7 @@ const Layout = () => {
     let url = `https://my-json-server.typicode.com/fred-ng/transwap-coding-challenge/countries`;
     let data = await fetch(url);
     let result = await data.json();
-
     setCountries(result);
-    console.log("===NEW GET DATA===", countries);
   };
 
   useEffect(() => {

@@ -18,7 +18,7 @@
 
 .card-icon .icon {
   left: -5rem;
-  top: 1.6rem;
+  top: 1rem;
   position: absolute;
   color: white;
 }
@@ -44,4 +44,10 @@
 
 .blur > #to-blur {
   opacity: 0.6;
+}
+.triangle {
+  width: 0px;
+  height: 0px;
+  border-bottom: 90px solid white;
+  border-left: 90px solid #5954e9;
 }
