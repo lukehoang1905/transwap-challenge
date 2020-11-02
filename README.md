@@ -7,6 +7,12 @@ Let's say we're developing a feature that allows users to select their own count
 - List out all the countries we're supporting
 - Allow users to select a single country
 
+
+### Quick Start
+
+Please use NPM install after cloning this repo 
+Use: http://localhost:3000/
+
 ### Solution
 
 #### Dependencies
