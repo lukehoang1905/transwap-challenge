@@ -9,18 +9,26 @@ Let's say we're developing a feature that allows users to select their own count
 
 ### Solution
 
+#### Dependencies
+
+- Material UI core and icons for UI layout
+
+#### Work flow
+
 - Build the UI first.
 
 - Folders based on UI:  
    |--src
-  |-- container
-  |-- Layout.js
-  |-- component
-  |-- Card.js
-
+    |-- component
+      |-- SingleCard.js
+      |-- SingleCard.css
+    |-- container
+      |-- Layout.js
+   
 - Get data from end point with Fetch
 - Save data
 - Load data to card components.
+- Refactor code.
 
 ### Wireframe
 

@@ -1,18 +1,40 @@
 .country-card {
+  margin: 0;
+  padding: 0;
+  border: 1px solid #ced0d6;
   border-radius: 8px;
-  width: 275px;
+  width: 100%;
   margin-bottom: 1rem;
-  border-color: #ced0d6;
   position: relative;
 }
 
 .card-icon {
   position: absolute;
   margin: 0;
+  padding: 0;
   color: white;
   background-color: #5954e9;
 }
 
 .country-card-selected {
-  border: 2px solid #5954e9;
+  border: 1px solid #5954e9;
+}
+
+.card-image {
+  position: relative;
+}
+
+.image-container {
+  text-align: center;
+  position: relative;
+  padding: 3rem;
+}
+.chip-coming {
+  top: 42%;
+  left: 32%;
+  position: absolute;
+}
+
+.blur > #to-blur {
+  opacity: 0.6;
 }

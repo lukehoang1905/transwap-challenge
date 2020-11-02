@@ -1,29 +1,52 @@
 import React, { useEffect } from "react";
-import { Card, CardActionArea, CardMedia, Grid } from "@material-ui/core";
+import {
+  Card,
+  CardActionArea,
+  CardMedia,
+  Chip,
+  Container,
+  Grid,
+} from "@material-ui/core";
 import "./SingleCard.css";
 import CheckSharpIcon from "@material-ui/icons/CheckSharp";
 
-const SingleCard = ({ id, selected, handleSelect }) => {
+const SingleCard = ({ country, selected, handleSelect }) => {
   return (
-    <Grid item xs={12} sm={4} md={3}>
+    <Grid item xs={12} sm={4} md={4}>
       <Card
         className={`country-card ${
-          selected === id ? "country-card-selected" : "hidden"
+          selected === country.id ? "country-card-selected" : ""
         }`}
       >
-        <CardActionArea onClick={() => handleSelect(id)}>
+        <CardActionArea
+          onClick={() => handleSelect(country.id)}
+          disabled={country.isComing}
+        >
           <CheckSharpIcon
             className="card-icon"
-            style={{ display: selected === id ? "flex" : "none" }}
-          />{" "}
-          <CardMedia
-            component="img"
-            alt="country"
-            height="140"
-            image="https://e7.pngegg.com/pngimages/647/917/png-clipart-minato-namikaze-rasengan-goku-naruto-uzumaki-goku-blue-sphere-thumbnail.png"
-            style={{ margin: "0" }}
+            style={{ display: selected === country.id ? "block" : "none" }}
           />
-          <p>{id}</p>
+          <Container
+            className={`image-container ${country.isComing ? "blur" : " "}`}
+          >
+            <CardMedia
+              component="img"
+              alt="country"
+              height="100"
+              width="100"
+              image={country.thumbnailUrl}
+              style={{ margin: 0, objectFit: "contain" }}
+              id="to-blur"
+            />
+            {country.isComing && (
+              <Chip
+                label="Comming Soon..."
+                style={{ background: "#212121", color: "white" }}
+                className="chip-coming"
+              />
+            )}
+            <h3 id="to-blur">{country.name}</h3>
+          </Container>
         </CardActionArea>
       </Card>
     </Grid>
