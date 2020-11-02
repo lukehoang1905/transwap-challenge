@@ -6,12 +6,14 @@ Let's say we're developing a feature that allows users to select their own count
 
 - List out all the countries we're supporting
 - Allow users to select a single country
-
+- Site is also reponsive
 
 ### Quick Start
 
 Please use NPM install after cloning this repo 
 Use: http://localhost:3000/
+Site: https://hat-transwap-challenge.netlify.app/
+Github: https://github.com/lukehoang1905/transwap-challenge
 
 ### Solution
 
@@ -19,18 +21,20 @@ Use: http://localhost:3000/
 
 - Material UI core and icons for UI layout
 
+
 #### Work flow
 
 - Build the UI first.
 
-- Folders based on UI:  
-   |--src
-    |-- component
-      |-- SingleCard.js
-      |-- SingleCard.css
-    |-- container
-      |-- Layout.js
-   
+- Folders based on UI:
+```
+|- src\
+   |- component\
+      |- SingleCard.js
+      |- SingleCard.css
+   |- container\
+      |- Layout.js
+```   
 - Get data from end point with Fetch
 - Save data
 - Load data to card components.
@@ -39,4 +43,4 @@ Use: http://localhost:3000/
 ### Wireframe
 
 [![N|Solid](https://raw.githubusercontent.com/fred-ng/transwap-coding-challenge/main/assets/images/wireframe.png)](https://raw.githubusercontent.com/fred-ng/transwap-coding-challenge/main/assets/images/wireframe.png)
-~
+
